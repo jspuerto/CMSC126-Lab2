@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>Juliana Ivy's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+        .content-section {
+            display: none;
+        }
+        .content-section.active {
+            display: block;
+        }
+    </style>
+</head>
+<section id="home" class="home">
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>Juliana's Portfolio</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="#" onclick="showContent('home')">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="#" onclick="showContent('about')">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="#" onclick="showContent('skills')">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="#" onclick="showContent('services')">Services</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="#" onclick="showContent('projects')">Projects</a></div>
+                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="#" onclick="showContent('contact')">Contact Me</a></div>
+            </div>
+        </div>
+    </nav>
+    <div class="main-container">
+        <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+            <img src="..\assets\dp.png" alt="">
+        </div>
+        <div class="content">
+            <div id="home-content" class="content-section active">
+                <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Hey I'm <span>Juliana Ivy</span></h1>
+                <div class="typewriter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">I'm a <span></span></div>
+                <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000" style="text-align: justify;">
+                    Hi! I’m a passionate and versatile developer with experience in both backend and frontend development. I enjoy building seamless, user-friendly applications and making sure everything runs smoothly behind the scenes. Whether it’s designing clean UI or writing efficient backend logic, I love turning ideas into working solutions. Let’s build something awesome together!
+                </p>
+                <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
+                    <a href="https://github.com/jspuerto" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.facebook.com/puertoivy/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/juliana-ivy-puerto-352aa5324/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://x.com/julianaybee" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+                <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
+                    <a href="..\assets\Puerto - CV.pdf" download="PuertoCV.pdf">
+                        <button>Download CV</button>
+                    </a>
+                </div>
+            </div>
+
+            <div id="about-content" class="content-section">
+                <h1>About Me</h1>
+                <p style="text-align: justify;">
+                    Hi, I’m Juliana Ivy Puerto, a 21-year-old full-stack developer and a 3rd-year Computer Science student at UP Cebu. I specialize in both frontend and backend development, with a passion for building robust APIs.
+                </p>
+                <p style="text-align: justify;">
+                    When I dive into a project, I can’t stop coding until it works perfectly. There’s a thrill in watching an idea evolve into a fully functional app, and I’m always pushing to create smooth, efficient solutions. Whether it's crafting beautiful user interfaces or designing powerful backend systems, I love making things happen.
+                </p> </div>
+
+            <div id="skills-content" class="content-section">
+                <h1>Skills</h1>
+                <ul>
+                    <li><strong>Languages:</strong> Python, JavaScript, C++</li>
+                    <li><strong>Frameworks:</strong> Django, Node.js, React Native</li>
+                    <li><strong>Tools:</strong> Git, PostgreSQL</li>
+                    <li><strong>Others:</strong> Godot Game Engine, HTML</li>
+                </ul>
+            </div>
+
+            <div id="services-content" class="content-section">
+                <h1>Services</h1>
+                <p>I offer a variety of services including:</p>
+                <ul style="padding-left: 20px;">
+                    <li>Website, game, and app development</li>
+                    <li>Backend development and API integrations</li>
+                    <li>Basic frontend setup</li>
+                    <li>Code review services for web projects</li>
+                </ul>
+            </div>
+
+            <div id="projects-content" class="content-section">
+                <h1>Projects</h1>
+                <p>Projects I've Contributed To:</p>
+                <ul style="padding-left: 20px;">
+                    <li><strong>Lakaw2 sa UP -</strong> A C++ game exploring UP Cebu places with
+                        puzzles to unlock the next location.</li>
+                    <li><strong>MediSync</strong> - Medication tracker system for nurses in
+                        hospitals</li>
+                    <li><strong>CMSC141</strong>  - A game built with Finite State Machines (FSM)
+                        as part of CMSC141 project .</li>
+                    <li><strong>Shadow Circuit</strong> - An AI-based game with puzzles and enemies
+                        to avoid for success</li>
+                </ul>
+              </div>
+
+            <div id="contact-content" class="content-section">
+                <h1>Contact Me</h1>
+                <p>Feel free to reach out via social links or email: jspuerto@up.edu.ph</p>
+                <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
+                    <a href="https://github.com/jspuerto" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.facebook.com/puertoivy/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/juliana-ivy-puerto-352aa5324/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://x.com/julianaybee" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+                <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
+                    <a href="..\assets\Puerto - CV.pdf" download="PuertoCV.pdf">
+                        <button>Download CV</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({ offset: 0 });
+
+    function hamburg() {
+        const navbar = document.querySelector(".dropdown");
+        navbar.style.transform = "translateY(0px)";
+    }
+
+    function cancel() {
+        const navbar = document.querySelector(".dropdown");
+        navbar.style.transform = "translateY(-500px)";
+    }
+
+    function showContent(section) {
+        const sections = document.querySelectorAll('.content-section');
+        sections.forEach(s => s.classList.remove('active'));
+        const target = document.getElementById(section + '-content');
+        if (target) target.classList.add('active');
+    }
+</script>
+</body>
+</html>
