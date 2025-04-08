@@ -23,6 +23,9 @@
             <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
                 <span>Juliana's Portfolio</span>
             </div>
+                <div class="hamburg" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
             <div class="links">
                 <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="#" onclick="showContent('home')">Home</a></div>
                 <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="#" onclick="showContent('about')">About</a></div>
@@ -158,6 +161,10 @@
         sections.forEach(s => s.classList.remove('active'));
         const target = document.getElementById(section + '-content');
         if (target) target.classList.add('active');
+    }
+    function toggleMenu() {
+    const links = document.querySelector('.nav-container .links');
+    links.classList.toggle('active');
     }
 </script>
 </body>
