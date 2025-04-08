@@ -191,7 +191,7 @@ section{
         content: "Full-Stack Developer";
     }
     34%, 66%{
-        content: "Sofware Engineer";
+        content: "Software Engineer";
     }
     67%, 100%{
         content: "Data Analyst";
@@ -334,20 +334,20 @@ section{
         align-items: center;
     }
     .nav-container .links {
-        display: none; /* Initially hide the links */
+        display: none; 
         flex-direction: column;
         gap: 1rem;
         position: absolute;
-        top: 60px; /* Adjust based on your header height */
+        top: 60px; 
         left: 0;
         right: 0;
-        background-color: rgba(216, 174, 224, 0.9); /* Transparent background */
+        background-color: rgba(216, 174, 224, 0.9); 
         padding: 10px 0;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         z-index: 1000;
     }
     .nav-container .links.active {
-        display: flex; /* Show links when active */
+        display: flex; 
     }
 
     .nav-container .links a {
@@ -358,7 +358,7 @@ section{
         text-align: center;
     }
     .hamburg {
-        display: block; /* Show hamburger icon */
+        display: block; 
     }
     .hamburg,.cancel{
         display: block;
@@ -421,21 +421,20 @@ section{
         background-color: rgb(200, 150, 50);
     }
     h1, h2, h3, h4, h5, h6, p, span {
-        color: white; /* Ensure text is visible */
+        color: white; 
     }
 
     a {
-        color: rgb(255, 200, 100); /* Set a contrasting color for links */
+        color: rgb(255, 200, 100); 
     }
 
     a:hover {
-        color: rgb(200, 150, 50); /* Adjust hover color */
+        color: rgb(200, 150, 50);
     }
     #about-content, #skills-content, #services-content, #projects-content {
-        background: rgb(213, 176, 224); /* Dark background */
-        color: white; /* Ensure text is visible */
+        background: rgb(213, 176, 224); 
+        color: white; 
     }
 }
-
 
 }
