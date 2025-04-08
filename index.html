@@ -69,10 +69,24 @@
             <div id="skills-content" class="content-section">
                 <h1>Skills</h1>
                 <ul>
-                    <li><strong>Languages:</strong> Python, JavaScript, C++</li>
-                    <li><strong>Frameworks:</strong> Django, Node.js, React Native</li>
-                    <li><strong>Tools:</strong> Git, PostgreSQL</li>
-                    <li><strong>Others:</strong> Godot Game Engine, HTML</li>
+                    <li><strong>Languages:</strong> 
+                        <i class="fa-brands fa-python"></i> Python, 
+                        <i class="fa-brands fa-js"></i> JavaScript, 
+                        <i class="fa-solid fa-code"></i> C++
+                    </li>
+                    <li><strong>Frameworks:</strong> 
+                        <i class="fa-brands fa-node"></i> Node.js, 
+                        <i class="fa-brands fa-react"></i> React Native, 
+                        <i class="fa-solid fa-cubes"></i> Django
+                    </li>
+                    <li><strong>Tools:</strong> 
+                        <i class="fa-brands fa-git-alt"></i> Git, 
+                        <i class="fa-solid fa-database"></i> PostgreSQL
+                    </li>
+                    <li><strong>Others:</strong> 
+                        <i class="fa-solid fa-gamepad"></i> Godot Game Engine, 
+                        <i class="fa-brands fa-html5"></i> HTML
+                    </li>
                 </ul>
             </div>
 
@@ -103,20 +117,20 @@
               </div>
 
             <div id="contact-content" class="content-section">
-                <h1>Contact Me</h1>
-                <p>Feel free to reach out via social links or email: jspuerto@up.edu.ph</p>
-                <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
-                    <a href="https://github.com/jspuerto" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.facebook.com/puertoivy/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://www.linkedin.com/in/juliana-ivy-puerto-352aa5324/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://x.com/julianaybee" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-                </div>
-                <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
-                    <a href="..\assets\Puerto - CV.pdf" download="PuertoCV.pdf">
-                        <button>Download CV</button>
-                    </a>
-                </div>
-            </div>
+            <h1>Contact Me</h1>
+            <p>Feel free to reach out via the form below or email me at: <strong>jspuerto@up.edu.ph</strong></p>
+            <form action="https://formspree.io/f/xyzebvlj" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
         </div>
     </div>
 </section>
